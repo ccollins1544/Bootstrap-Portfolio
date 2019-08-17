@@ -6,7 +6,8 @@ Portfolio Created in Coding Bootcamp Fall 2019 using bootstrap. I'll continue to
 * The email form does not actually work on [https://ccollins1544.github.io/Bootstrap-Portfolio/contact.html](https://ccollins1544.github.io/Bootstrap-Portfolio/contact.html)
 
 ### Useful links
-* Live GitHub Pages: [https://ccollins1544.github.io/Boostrap-Portfolio](https://ccollins1544.github.io/Bootstrap-Portfolio)
+* This Live Repo: [https://ccollins1544.github.io/Boostrap-Portfolio](https://ccollins1544.github.io/Bootstrap-Portfolio)
+* My Github Portal: [https://ccollins1544.github.io](https://ccollins1544.github.io/)
 * Main Portfolio Page: [https://ccollins.io](https://ccollins.io)
 
 ## Contact

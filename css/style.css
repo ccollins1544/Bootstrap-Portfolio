@@ -80,7 +80,8 @@ h6 {
 body.page-template {
     font-family: "Ubuntu";
     color: var(--body-text);
-    background-color: var(--body-background);
+    /* background-color: var(--body-background); */
+    background: url('../img/black_paper_800x800.png')
 }
 
 .container-fluid {
