@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <title>Bootstrap Portfolio | Contact</title>
-    <meta name="description" content="Portfolio Created in Coding Bootcamp Fall 2019." />
+    <meta name="description"
+        content="Have a question or want to work together please shoot me an email and I'll get back to you as soon as possible." />
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Google Fonts -->
@@ -13,7 +14,7 @@
     <!-- CSS Stylesheets -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css?v=1.1.5">
+    <link rel="stylesheet" href="assets/css/style.css?v=1.2">
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.1/css/all.css">
@@ -32,131 +33,145 @@
 </head>
 
 <body class="page-template">
-    <div class="content-wrapper">
-        <!-- Main Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-light" id="main-nav">
-            <div class="collapse navbar-collapse">
+    <!-- Header -->
+    <header id="main-header">
+        <div class="container-fluid clearfix">
+            <!-- Main Navbar -->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="main-nav">
                 <!-- Navbar brand -->
-                <a href="index.html">
-                    <h1 class="navbar-brand">Christopher Collins</h1>
+                <a class="navbar-brand mb-0 h1" href="index.html">
+                    Christopher Collins
                 </a>
 
-                <ul class="navbar-nav ml-auto">
-                    <!-- Links -->
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="portfolio.html">Portfolio</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </nav><!-- #main-nav -->
-
-        <!-- Mobile  Navbar -->
-        <nav class="navbar navbar-light lighten-4" id="mobile-nav">
-            <!-- Navbar brand -->
-            <a class="navbar-brand" href="#">Christopher Collins</a>
-
-            <!-- Collapse Button -->
-            <button class="navbar-toggler toggler-example" type="button" data-toggle="collapse"
-                data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false"
-                aria-label="Toggle navigation"><span class="dark-blue-text"><i
-                        class="fas fa-bars fa-1x"></i></span></button>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent1">
-                <!-- Links -->
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="portfolio.html">Portfolio</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-                </ul>
-            </div><!-- #navbarSupportedContent1 -->
-        </nav><!-- #mobile-nav -->
-
-        <!-- Main Section -->
-        <section class="section-block" id="main-section">
-            <div class="container-fluid">
-
-                <div class="row first-row">
-                    <h2 id="page-title">Contact</h2>
-                    <small class="contact-message">Have a question or want to work together?</small>
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav ml-auto">
+                        <!-- Links -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="portfolio.html">Portfolio</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
                 </div>
+            </nav><!-- #main-nav -->
 
-                <hr />
+            <!-- Mobile Navbar -->
+            <div class="pos-f-t navbar-dark" id="mobile-nav">
+                <!-- Navbar brand -->
+                <a class="navbar-brand mb-0 h1" href="#">Christopher Collins</a>
 
-                <div class="row">
-                    <form id="contact-form">
-                        <div class="form-row">
-                            <div class="form-group col">
-                                <label for="input-from-name">Name</label>
-                                <input type="text" class="form-control" id="input-from-name" name="input-from-name"
-                                    placeholder="Enter Your Name">
+                <nav class="navbar navbar-dark bg-dark">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleMenu"
+                        aria-controls="navbarToggleMenu" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </nav>
+
+                <div class="collapse navbar-collapse" id="navbarToggleMenu">
+                    <div class="bg-dark p-3">
+                        <!-- <h5 class="text-white h4">Collapsed content</h5>
+                            <span class="text-muted">Toggleable via the navbar brand.</span> -->
+                        <!-- Links -->
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="portfolio.html">Portfolio</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div><!-- .bg-dark -->
+                </div><!-- #navbarToggleMenu -->
+            </div><!-- #mobile-nav -->
+        </div><!-- .container -->
+
+        <!-- Main Container -->
+        <article id="main-container" class="content-wrapper">
+            <section class="section-block" id="main-section">
+                <div class="container">
+                    <div class="row first-row">
+                        <h2 id="page-title">Contact</h2>
+                        <small class="contact-message">Have a question or want to work together?</small>
+                    </div>
+
+                    <hr />
+
+                    <div class="row">
+                        <form id="contact-form">
+                            <div class="form-row">
+                                <div class="form-group col">
+                                    <label for="input-from-name">Name</label>
+                                    <input type="text" class="form-control" id="input-from-name" name="input-from-name"
+                                        placeholder="Enter Your Name">
+                                </div>
+                                <div class="form-group col">
+                                    <label for="input-email">Email</label>
+                                    <input type="email" class="form-control" id="input-email" name="input-email"
+                                        placeholder="Enter Your Email">
+                                </div>
+                            </div><!-- .row -->
+
+                            <div class="form-group">
+                                <label for="input-subject">Subject</label>
+                                <input type="text" class="form-control" id="input-subject" name="input-subject"
+                                    placeholder="Subject">
                             </div>
-                            <div class="form-group col">
-                                <label for="input-email">Email</label>
-                                <input type="email" class="form-control" id="input-email" name="input-email"
-                                    placeholder="Enter Your Email">
-                            </div>
-                        </div><!-- .row -->
 
-                        <div class="form-group">
-                            <label for="input-subject">Subject</label>
-                            <input type="text" class="form-control" id="input-subject" name="input-subject"
-                                placeholder="Subject">
-                        </div>
-                        <div class="form-group">
-                            <label for="input-message">Message</label>
-                            <textarea type="text" class="form-control" id="input-message" name="input-message"
-                                placeholder="Enter Your Message" rows="5"></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Send</button>
-                    </form><!-- #contact-form -->
+                            <div class="form-group">
+                                <label for="input-message">Message</label>
+                                <textarea type="text" class="form-control" id="input-message" name="input-message"
+                                    placeholder="Enter Your Message" rows="5"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Send</button>
+                        </form><!-- #contact-form -->
+                    </div>
+                </div><!-- .container-fluid -->
+            </section><!-- #main-section -->
+        </article><!-- #main-container-->
+
+        <!-- Footer -->
+        <footer id="main-footer">
+            <!-- Footer Nav -->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="footer-nav">
+                <div class="navbar-collapse">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.linkedin.com/in/ccollins1544/" target="_blank"
+                                rel="noopener noreferrer">
+                                <i class="fab fa-linkedin fa-2x"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://dev.to/ccollins" target="_blank">
+                                <i class="fab fa-dev fa-2x" title="ccollins's DEV Profile"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://ccollins1544.github.io/">
+                                <i class="fab fa-github fa-2x"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div><!-- .container -->
+            </nav><!-- #footer-nav -->
+
+            <!-- Footer Credits -->
+            <div id="footer-bottom">
+                <div id="footer-info">Copyright © 2019 | <a class="footer-link" href="index.html">Christopher
+                        Collins</a> |
+                    <a class="footer-link" href="https://github.com/ccollins1544/Bootstrap-Portfolio">Coding
+                        Bootcamp</a>
                 </div>
-            </div><!-- .container-fluid -->
-        </section><!-- #main-section -->
-    </div><!-- .content-wrapper -->
+            </div><!-- #footer-bottom -->
 
-    <!-- Footer -->
-    <footer id="main-footer">
-
-        <div class="footer-nav">
-            <div class="container clearfix">
-                <ul class="bottom-nav">
-                    <li>
-                        <a href="https://www.linkedin.com/in/ccollins1544/" target="_blank" rel="noopener noreferrer">
-                            <i class="fab fa-linkedin fa-2x"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://dev.to/ccollins" target="_blank">
-                            <i class="fab fa-dev fa-2x" title="ccollins's DEV Profile"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://ccollins1544.github.io/">
-                            <i class="fab fa-github fa-2x"></i>
-                        </a>
-                    </li>
-                </ul><!-- .bottom-nav -->
-            </div><!-- .container -->
-        </div><!-- #footer-nav -->
-
-        <div id="footer-bottom">
-            <div id="footer-info">Copyright © 2019 | <a class="footer-link" href="index.html">Christopher Collins</a> |
-                <a class="footer-link" href="https://github.com/ccollins1544/Bootstrap-Portfolio">Coding Bootcamp</a> | All Rights Reserved</div>
-        </div><!-- #footer-bottom -->
-
-    </footer><!-- #main-footer -->
+        </footer><!-- #main-footer -->
 </body><!-- .page-template -->
 
 </html>

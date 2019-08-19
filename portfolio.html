@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <title>Bootstrap Portfolio</title>
-    <meta name="description" content="Portfolio Created in Coding Bootcamp Fall 2019." />
+    <meta name="description"
+        content="I've been actively developing websites professionally over the last 5 years. These are some of the past projects I've worked on." />
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Google Fonts -->
@@ -13,7 +14,7 @@
     <!-- CSS Stylesheets -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css?v=1.1.5">
+    <link rel="stylesheet" href="assets/css/style.css?v=1.2">
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.1/css/all.css">
@@ -32,70 +33,80 @@
 </head>
 
 <body class="page-template">
-    <div class="content-wrapper">
-        <!-- Main Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-light" id="main-nav">
-            <div class="collapse navbar-collapse">
+    <!-- Header -->
+    <header id="main-header">
+        <div class="container-fluid clearfix">
+            <!-- Main Navbar -->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="main-nav">
                 <!-- Navbar brand -->
-                <a href="index.html">
-                    <h1 class="navbar-brand">Christopher Collins</h1>
+                <a class="navbar-brand mb-0 h1" href="index.html">
+                    Christopher Collins
                 </a>
 
-                <ul class="navbar-nav ml-auto">
-                    <!-- Links -->
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">About</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="portfolio.html">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </nav><!-- #main-nav -->
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav ml-auto">
+                        <!-- Links -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">About</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="portfolio.html">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav><!-- #main-nav -->
 
-        <!-- Mobile  Navbar -->
-        <nav class="navbar navbar-light lighten-4" id="mobile-nav">
-            <!-- Navbar brand -->
-            <a class="navbar-brand" href="#">Christopher Collins</a>
+            <!-- Mobile Navbar -->
+            <div class="pos-f-t navbar-dark" id="mobile-nav">
+                <!-- Navbar brand -->
+                <a class="navbar-brand mb-0 h1" href="#">Christopher Collins</a>
 
-            <!-- Collapse Button -->
-            <button class="navbar-toggler toggler-example" type="button" data-toggle="collapse"
-                data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false"
-                aria-label="Toggle navigation"><span class="dark-blue-text"><i
-                        class="fas fa-bars fa-1x"></i></span></button>
+                <nav class="navbar navbar-dark bg-dark">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleMenu"
+                        aria-controls="navbarToggleMenu" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </nav>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent1">
-                <!-- Links -->
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">About</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="portfolio.html">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-                </ul>
-            </div><!-- #navbarSupportedContent1 -->
-        </nav><!-- #mobile-nav -->
+                <div class="collapse navbar-collapse" id="navbarToggleMenu">
+                    <div class="bg-dark p-3">
+                        <!-- <h5 class="text-white h4">Collapsed content</h5>
+                            <span class="text-muted">Toggleable via the navbar brand.</span> -->
+                        <!-- Links -->
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">About</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="portfolio.html">Portfolio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div><!-- .bg-dark -->
+                </div><!-- #navbarToggleMenu -->
+            </div><!-- #mobile-nav -->
+        </div><!-- .container -->
+    </header><!-- #main-header -->
 
-        <!-- Main Section -->
+    <!-- Main Container -->
+    <article id="main-container" class="content-wrapper">
         <section class="section-block" id="main-section">
-            <div class="container-fluid">
+            <div class="container">
                 <div class="row first-row">
                     <h2 id="page-title">Portfolio</h2>
-                </div><!-- .first-row -->
+                </div>
                 <hr />
                 <div class="row">
-                    <div class="col-xl-4 col-lg-6 col-sm-12">
+                    <div class="col-lg-6 col-md-6 col-sm-12">
                         <div class="blurb_content">
                             <a href="https://deserttech.com/" target="_blank">
                                 <span class="image_wrap">
-                                    <img src="img/deserttech-launch-2015.jpg" alt="Desert Tech Launch 2015">
+                                    <img src="assets/img/deserttech-launch-2015.jpg" alt="Desert Tech Launch 2015">
                                     <span class="image_overlay"></span>
                                 </span>
                             </a>
@@ -103,11 +114,12 @@
                         </div>
                     </div>
 
-                    <div class="col-xl-4 col-lg-6 col-sm-12">
+                    <div class="col-lg-6 col-md-6 col-sm-12">
                         <div class="blurb_content">
                             <a href="https://cart.deserttech.com/mdr/#mdr" target="_blank">
                                 <span class="image_wrap">
-                                    <img src="img/deserttech-mdr-campaign-2019.png" alt="Desert Tech MDR Campaign">
+                                    <img src="assets/img/deserttech-mdr-campaign-2019.png"
+                                        alt="Desert Tech MDR Campaign">
                                     <span class="image_overlay"></span>
                                 </span>
                             </a>
@@ -115,11 +127,11 @@
                         </div>
                     </div>
 
-                    <div class="col-xl-4 col-lg-6 col-sm-12">
+                    <div class="col-lg-6 col-md-6 col-sm-12">
                         <div class="blurb_content">
                             <a href="https://lighthouseprinting.design/" target="_blank">
                                 <span class="image_wrap">
-                                    <img src="img/lighthouseprinting_design-launch.png"
+                                    <img src="assets/img/lighthouseprinting_design-launch.png"
                                         alt="Lighthouse Printing & Design">
                                     <span class="image_overlay"></span>
                                 </span>
@@ -128,11 +140,11 @@
                         </div>
                     </div>
 
-                    <div class="col-xl-12 col-lg-6 col-sm-12">
+                    <div class="col-lg-6 col-md-6 col-sm-12">
                         <div class="blurb_content">
                             <a href="https://ccollins.io/" target="_blank">
                                 <span class="image_wrap">
-                                    <img src="img/main-portfolio-site.png" alt="Main Portfolio Site">
+                                    <img src="assets/img/main-portfolio-site.png" alt="Main Portfolio Site">
                                     <span class="image_overlay"></span>
                                 </span>
                             </a>
@@ -142,36 +154,39 @@
                 </div><!-- .row -->
             </div><!-- .container-fluid -->
         </section><!-- #main-section -->
-    </div><!-- .content-wrapper -->
+    </article><!-- #main-container-->
 
     <!-- Footer -->
     <footer id="main-footer">
-
-        <div class="footer-nav">
-            <div class="container clearfix">
-                <ul class="bottom-nav">
-                    <li>
-                        <a href="https://www.linkedin.com/in/ccollins1544/" target="_blank" rel="noopener noreferrer">
+        <!-- Footer Nav -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="footer-nav">
+            <div class="navbar-collapse">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.linkedin.com/in/ccollins1544/" target="_blank"
+                            rel="noopener noreferrer">
                             <i class="fab fa-linkedin fa-2x"></i>
                         </a>
                     </li>
-                    <li>
-                        <a href="https://dev.to/ccollins" target="_blank">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://dev.to/ccollins" target="_blank">
                             <i class="fab fa-dev fa-2x" title="ccollins's DEV Profile"></i>
                         </a>
                     </li>
-                    <li>
-                        <a href="https://ccollins1544.github.io/">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://ccollins1544.github.io/">
                             <i class="fab fa-github fa-2x"></i>
                         </a>
                     </li>
-                </ul><!-- .bottom-nav -->
+                </ul>
             </div><!-- .container -->
-        </div><!-- #footer-nav -->
+        </nav><!-- #footer-nav -->
 
+        <!-- Footer Credits -->
         <div id="footer-bottom">
             <div id="footer-info">Copyright © 2019 | <a class="footer-link" href="index.html">Christopher Collins</a> |
-                <a class="footer-link" href="https://github.com/ccollins1544/Bootstrap-Portfolio">Coding Bootcamp</a> | All Rights Reserved</div>
+                <a class="footer-link" href="https://github.com/ccollins1544/Bootstrap-Portfolio">Coding Bootcamp</a>
+            </div>
         </div><!-- #footer-bottom -->
 
     </footer><!-- #main-footer -->
