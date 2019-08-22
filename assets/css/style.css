@@ -1,4 +1,4 @@
-/** 
+/**
  * MAIN CSS
  * Author:  Christopher Collins
  * Version: 2.2
@@ -85,7 +85,7 @@ article#main-container {
     margin-top: 40px;
 }
 
-/** STICKY FOOTER 
+/** STICKY FOOTER
  * header 63px + main-container margin 40px + section margin 50px + footer 83px = 236px
  */
 #main-container.content-wrapper {
@@ -298,11 +298,11 @@ img {
     transition: all .4s;
 }
 
-/* IMAGE Zoom on Hover */ 
-/* [1] The Container */ 
+/* IMAGE Zoom on Hover */
+/* [1] The Container */
 .img-hover-zoom,
 .blurb_content {
-    /* Hide the overflowing of child elements  */ 
+    /* Hide the overflowing of child elements  */
     overflow: hidden;
 }
 
@@ -618,7 +618,8 @@ img {
 }
 
 .fa-github:hover {
-    color: #959da5 -webkit-animation-name: github_animation;
+    color: #959da5;
+    -webkit-animation-name: github_animation;
     /* Safari 4.0 - 8.0 */
     -webkit-animation-duration: 2s;
     /* Safari 4.0 - 8.0 */
@@ -812,7 +813,7 @@ img {
         margin-right: 15px;
     }
 
-    /** STICKY FOOTER 
+    /** STICKY FOOTER
      * header 56px + main-container margin 40px + section margin 50px + footer 83px = 229px
      */
     #main-container.content-wrapper {
@@ -862,7 +863,7 @@ img {
         bottom: 58px;
     }
 
-    /** STICKY FOOTER 
+    /** STICKY FOOTER
      * header 56px + main-container margin 40px + section margin 50px + footer 108px = 254px
      */
     #main-container.content-wrapper {
